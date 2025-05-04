@@ -18,15 +18,27 @@ export default function App() {
     name.toLowerCase().includes(filter.toLowerCase()),
   );
 
+  const addContact = (newContact) => {
+    setContacts((prev) => [newContact, ...prev]);
+  };
+
+  const deleteContact = (id) => {
+    setContacts((prevContacts) =>
+      prevContacts.filter((contact) => contact.id !== id),
+    );
+  };
+
   return (
     <div>
-      <h1>Phonebook</h1>
-      <ContactForm />
-      <SearchBox
-        value={filter}
-        onChange={(event) => setFilter(event.target.value)}
-      />
-      <ContactList contacts={visibleContacts} />
+      <div className="topsSection">
+        <h1>Phonebook</h1>
+        <ContactForm onSubmit={addContact} />
+        <SearchBox
+          value={filter}
+          onChange={(event) => setFilter(event.target.value)}
+        />
+      </div>
+      <ContactList contacts={visibleContacts} onDelete={deleteContact} />
     </div>
   );
 }

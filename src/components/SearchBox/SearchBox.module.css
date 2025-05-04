@@ -1,19 +1,12 @@
 .searchInput {
-  /* чтобы заняло всю ширину родителя */
   width: 100%;
-  /* чуть внутреннего отступа */
   padding: 8px 12px;
-  /* аккуратная граница */
   border: 1px solid #ccc;
-  /* скругление уголков */
   border-radius: 4px;
-  /* чуть больше шрифт для читаемости */
   font-size: 16px;
-  /* box-sizing, чтобы padding не ломал ширину */
   box-sizing: border-box;
-  /* расстояние до списка */
   margin-bottom: 16px;
-  background-color: white;
+  background: white;
   color: black;
 }
 .searchInput:focus {

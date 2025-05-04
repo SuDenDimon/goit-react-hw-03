@@ -6,9 +6,10 @@ ul {
 .contactItem {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 12px 16px;
-  gap: 16px; /* отступы между infoGroup и кнопкой */
-  border: 1px solid #000; /* или #ccc */
+  gap: 16px;
+  border: 1px solid #000;
   border-radius: 8px;
   margin-bottom: 12px;
 }
@@ -22,9 +23,9 @@ ul {
   padding: 8px 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #f5f5f5;
   cursor: pointer;
-  color: #000;
+  color: black;
+  background-color: white;
 }
 .deleteBtn:active {
   background-color: #e0e0e0;
