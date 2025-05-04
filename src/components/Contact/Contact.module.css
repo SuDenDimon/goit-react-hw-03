@@ -1,3 +1,31 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .contactItem {
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px; /* отступы между infoGroup и кнопкой */
+  border: 1px solid #000; /* или #ccc */
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+.deleteBtn {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  color: #000;
+}
+.deleteBtn:active {
+  background-color: #e0e0e0;
 }
