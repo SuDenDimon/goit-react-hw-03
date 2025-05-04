@@ -1,1 +1,15 @@
-
+.contactList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  max-width: 1000px; /* чтобы не тянулось во всю ширину экрана */
+}
+.contactListItem {
+  flex: 1 1 calc(25% - 16px); /* 4 карточки в ряд, с учётом gap */
+  max-width: calc(25% - 16px);
+  min-width: 220px;
+}
